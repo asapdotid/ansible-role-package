@@ -1,0 +1,22 @@
+---
+# Debian add repository
+apt_repositories: []
+
+# List of packages
+package_list:
+  []
+  # - name: htop
+  #   state: present (default: present)
+  # or
+  # - name:
+  #     - htop
+  #     - curl
+
+# Packages state
+package_state: present
+
+# Update cache?
+package_update_cache: yes
+
+# Cache valid time
+package_cache_valid_time: 3600

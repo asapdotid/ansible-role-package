@@ -1,0 +1,21 @@
+---
+- import_tasks: package-apt.yml
+  when: ansible_facts['os_family'] == "Debian"
+
+- import_tasks: package-yum.yml
+  when: ansible_facts['os_family'] == "RedHat"
+
+- import_tasks: package-dnf.yml
+  when: ansible_facts['distribution'] == "Fedora"
+
+- import_tasks: package-brew.yml
+  when: ansible_facts['os_family'] == "Darwin"
+
+- import_tasks: package-zypper.yml
+  when: ansible_facts['os_family'] == "Suse"
+
+- import_tasks: package-pacman.yml
+  when: ansible_facts['os_family'] == "Archlinux"
+
+- import_tasks: package-portage.yml
+  when: ansible_facts['os_family'] == "Gentoo"

@@ -1,0 +1,7 @@
+---
+- name: PACKAGE | Install package(s) in {{ ansible_facts['distribution'] }}
+  ansible.builtin.dnf:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default(package_state) }}"
+  with_items: "{{ package_list }}"
+  when: package_list != "{}"
