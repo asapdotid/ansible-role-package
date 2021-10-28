@@ -3,7 +3,7 @@
   ansible.builtin.command: dpkg --configure -a
   changed_when: false
 
-- name: PACKAGE | Add git stable apt_repository in {{ ansible_facts['distribution'] }}
+- name: PACKAGE | Add stable repository in {{ ansible_facts['distribution'] }}
   ansible.builtin.apt_repository:
     repo: "{{ item }}"
     state: present
