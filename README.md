@@ -16,12 +16,6 @@
 <a href="LICENSE.md">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="Licence">
 </a>
-<a href="https://ubuntu.com/">
-  <img src="https://img.shields.io/badge/ubuntu-20.x-orange?style=flat&logo=ubuntu" alt="Distribution">
-</a>
-<a href="https://www.centos.org/">
-  <img src="https://img.shields.io/badge/CentOS-8-green?style=flat&logo=centos" alt="Distribution">
-</a>
 
 ## Requirements
 
