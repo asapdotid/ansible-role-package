@@ -1,10 +1,11 @@
 ---
 galaxy_info:
+  role_name: package
   author: Asapdotid
   description: A role for installing packages on different operating systems.
-  company: Asapdotid
+  company: none
   license: MIT
-  min_ansible_version: 2.9
+  min_ansible_version: "2.10"
   platforms:
     - name: EL
       versions:
@@ -106,7 +107,5 @@ galaxy_info:
     - pacman
     - portage
     - packaging
-
-allow_duplicates: yes
 
 dependencies: []
