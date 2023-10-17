@@ -5,4 +5,4 @@
     state: "{{ item.state | default(package_state) }}"
     sync: "{{ package_update_cache }}"
   with_items: "{{ package_list }}"
-  when: package_list != "{}"
+  when: package_list | length > 0
