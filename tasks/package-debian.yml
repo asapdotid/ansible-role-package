@@ -8,7 +8,7 @@
     repo: "{{ item }}"
     state: present
   with_items: "{{ apt_repositories }}"
-  when: apt_repositories != "{}"
+  when: apt_repositories | length > 0
 
 - name: PACKAGE | Install package(s) in {{ ansible_facts['distribution'] }}
   ansible.builtin.apt:
@@ -17,4 +17,4 @@
     update_cache: "{{ package_update_cache }}"
     cache_valid_time: "{{ package_cache_valid_time }}"
   with_items: "{{ package_list }}"
-  when: package_list != "{}"
+  when: package_list | length > 0

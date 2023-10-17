@@ -5,4 +5,4 @@
     name: "{{ item.name }}"
     state: "{{ item.state | default(package_state) }}"
   with_items: "{{ package_list }}"
-  when: package_list != "{}"
+  when: package_list | length > 0

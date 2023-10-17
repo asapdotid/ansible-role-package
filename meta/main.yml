@@ -5,7 +5,7 @@ galaxy_info:
   description: A role for installing packages on different operating systems.
   company: none
   license: MIT
-  min_ansible_version: "2.9"
+  min_ansible_version: "2.10"
   platforms:
     - name: EL
       versions:
@@ -34,7 +34,5 @@ galaxy_info:
     - pacman
     - portage
     - packaging
-
-allow_duplicates: true
 
 dependencies: []
